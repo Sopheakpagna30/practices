@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="ex2.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Create Account</h1>
+        <form>
+            <div class="form-grid">
+                <!-- First Name -->
+                <div class="form-group">
+                    <p>First name *</p>
+                    <input type="text" id="first-name" placeholder="enter your first name">
+                </div>
+
+                <!-- Last Name -->
+                <div class="form-group">
+                    <p>Last name *</p>
+                    <input type="text" id="last-name" placeholder="enter your last name">
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <p>Email *</p>
+                    <input type="email" id="email" placeholder="enter your email">
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="form-group">
+                    <p>Confirm Password *</p>
+                    <input type="password" id="confirm-password" placeholder="enter your password again">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <p>Password *</p>
+                    <input type="password" id="password" placeholder="enter your password">
+                </div>
+
+                <!-- Hobbies -->
+                <div class="form-group">
+                    <p>Hobbies</p>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" value="Music"> Music</label>
+                        <label><input type="checkbox" value="Sports"> Sports</label>
+                        <label><input type="checkbox" value="Travel"> Travel</label>
+                        <label><input type="checkbox" value="Movies"> Movies</label>
+                    </div>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <p>Gender</p>
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+
+                <!-- Income -->
+                <div class="form-group">
+                    <p>Income</p>
+                    <div class="income-slider">
+                        <input type="range" id="income" min="0" max="50000" step="1000">
+                        <span id="income-value">20K</span>
+                    </div>
+                </div>
+
+                <!-- Source of Income -->
+                <div class="form-group">
+                    <p>Source of Income</p>
+                    <select id="source-income">
+                        <option value="Employed">Employed</option>
+                        <option value="Student">Student</option>
+                        <option value="Unemployed">Unemployed</option>
+                    </select>
+                </div>
+
+                <!-- Age -->
+                <div class="form-group">
+                    <p>Age</p>
+                    <input type="number" id="age" value="18">
+                </div>
+
+                <!-- Profile Picture -->
+                <div class="form-group">
+                    <p>Upload Profile Picture</p>
+                    <input type="file" id="profile-picture">
+                </div>
+
+                <!-- Bio -->
+                <div class="form-group full-width">
+                    <p>Bio</p>
+                    <textarea id="bio" rows="4" placeholder="Enter your bio"></textarea>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-footer">
+                <button type="submit">Create</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
